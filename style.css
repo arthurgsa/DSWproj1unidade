@@ -58,21 +58,49 @@ header {
 }
 
 .logo-wrapper {
-  display: flexbox;
+  display: flex; /* Altera para flex para permitir alinhamento dos itens */
   align-items: center;
+  justify-content: space-between; /* Distribui os itens horizontalmente */
 }
 
 .logo-topo {
-  width: 400px;
+  width: 400px; /* Reduz a largura do logo */
   height: auto;
-  margin-top: 30px; /* Adiciona margem ao topo da logo */
+  margin-left: 30px; /* Adiciona margem à esquerda da logo */
+  margin-top: 20px; /* Adiciona margem ao topo da logo */
+  margin-bottom: 20px; /* Adiciona margem ao fundo da logo */
+}
+
+.barra-pesquisa {
+  display: flex; /* Utiliza flex para alinhar a barra de pesquisa */
+  align-items: center;
+  margin-right: 30px; /* Adiciona margem à direita da barra de pesquisa */
+}
+
+.barra-pesquisa input[type="text"] {
+  padding: 10px; /* Adiciona padding à caixa de entrada */
+  margin-right: 10px; /* Adiciona margem à direita para separação */
+  border-radius: 5px; /* Adiciona borda arredondada */
+}
+
+.barra-pesquisa button {
+  padding: 10px; /* Adiciona padding ao botão */
+  border-radius: 5px; /* Adiciona borda arredondada */
+  background-color: #192b45; /* Define a cor de fundo padrão do botão */
+  color: white; /* Define a cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.barra-pesquisa button:hover {
+  background-color: #457b9d; /* Muda a cor de fundo ao passar o mouse */
 }
 
 .logo-menu {
-  width: 15px;
-  height: auto;
-  margin-right: 10px; /* Adiciona margem à direita do ícone do menu */
-  margin-left: 10px; /* Adiciona margem à esquerda do ícone do menu */
+  width: auto;
+  height: 15px;
+  margin-right: 0px; /* Adiciona margem à direita do ícone do menu */
+  margin-left: 0px; /* Adiciona margem à esquerda do ícone do menu */
 }
 
 h2 {
