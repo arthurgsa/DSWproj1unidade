@@ -7,7 +7,6 @@ body {
   position: relative; /* Define a posição relativa para o corpo */
 }
 
-
 footer {
   text-align: center;
   height: 5rem;
@@ -20,7 +19,6 @@ footer {
   width: 100%; /* Define a largura total para o rodapé */
 }
 
-
 /* Adiciona uma área com a mesma cor abaixo do footer */
 body::after {
   display: block;
@@ -30,29 +28,25 @@ body::after {
   position: absolute;
   bottom: -4rem; /* Posiciona a área abaixo do footer */
   left: 0;
- /* Coloca a área abaixo do rodapé */
+  /* Coloca a área abaixo do rodapé */
 }
 
-    main{
-      padding-bottom: 100px;
-    }
-
+main {
+  padding-bottom: 100px;
+}
 
 /*DEBUG FOOTER /\ */
 
-
-.cor{
-  background-color: #457B9D;
+.cor {
+  background-color: #457b9d;
 }
 
-
 header {
-  background-color: #1D3557;
+  background-color: #1d3557;
   color: #ffffff;
   align-items: center; /* Alinha verticalmente os itens ao centro */
   text-align: center; /* Centraliza o texto dentro do cabeçalho */
 }
-
 
 .site {
   background-color: white;
@@ -61,7 +55,6 @@ header {
   margin-right: 20%;
   padding: 10px;
   padding-left: 25px;
-  
 }
 
 .logo-wrapper {
@@ -72,14 +65,19 @@ header {
 .logo-topo {
   width: 400px;
   height: auto;
-  margin-right: 90px; /* Adiciona margem à direita da logo */
-  margin-left: 10px; /* Adiciona margem à direita da logo */
-  margin-top: 25px; /* Adiciona margem ao topo da logo */
+  margin-top: 30px; /* Adiciona margem ao topo da logo */
+}
+
+.logo-menu {
+  width: 15px;
+  height: auto;
+  margin-right: 10px; /* Adiciona margem à direita do ícone do menu */
+  margin-left: 10px; /* Adiciona margem à esquerda do ícone do menu */
 }
 
 h2 {
   font-size: 25px;
-  
+
   margin: 10px; /* Adiciona margem de 10px nas laterais do título */
 }
 
@@ -87,31 +85,38 @@ nav {
   clear: both;
   margin-top: 5px;
   text-align: center; /* Centraliza o texto dentro do elemento <nav> */
-  background-color: #1D3557 /* Cor de fundo do menu */
+  background-color: #1d3557; /* Cor de fundo do menu */
 }
 
 nav ul {
+  margin: 0px;
   display: inline-block; /* Define o elemento <ul> como um bloco inline */
 }
 
 nav ul li {
-  display: inline; /* Define os itens da lista como inline para que fiquem lado a lado */
+  display: inline-block; /* Define os itens da lista como inline-block para que fiquem lado a lado */
   margin-right: 50px;
 }
 
+nav ul li:hover {
+  background-color: rgba(
+    51,
+    94,
+    121,
+    0.7
+  ); /* Muda a cor de fundo do item do menu ao passar o mouse */
+}
+
 nav ul li:last-child {
-  margin-right:11px; /* Remove a margem à direita do último item da lista para evitar espaçamento extra */
+  border-right: none; /* Remove a borda direita do último item */
 }
 
 nav ul li a {
+  display: block; /* Para que o link ocupe toda a largura do item do menu */
+  padding: 15px; /* Adiciona espaço entre o texto e a borda do item */
   color: #fff;
   text-decoration: none;
 }
-
-
-
-
-
 
 /*repsonsivity*/
 
