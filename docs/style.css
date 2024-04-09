@@ -84,12 +84,19 @@ header {
 }
 
 .barra-pesquisa button {
-  padding: 10px; /* Adiciona padding ao botão */
+  padding: 0px; /* Adiciona padding ao botão */
   border-radius: 5px; /* Adiciona borda arredondada */
   background-color: #192b45; /* Define a cor de fundo padrão do botão */
   color: white; /* Define a cor do texto do botão */
   border: none; /* Remove a borda do botão */
   transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.botao-teste {
+  color: white;
+  display: block;
+  padding: 12px;
+  margin: 0px;
 }
 
 .barra-pesquisa button:hover {
