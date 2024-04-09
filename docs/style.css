@@ -58,9 +58,14 @@ header {
 }
 
 .logo-wrapper {
-  display: flex; /* Altera para flex para permitir alinhamento dos itens */
+  display: flex;
   align-items: center;
-  justify-content: space-between; /* Distribui os itens horizontalmente */
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(0, 0, 0, 0.5)
+  ); /* Adiciona um gradiente ao fundo do logo-wrapper */
 }
 
 .logo-topo {
@@ -121,6 +126,13 @@ nav {
   margin-top: 5px;
   text-align: center; /* Centraliza o texto dentro do elemento <nav> */
   background-color: #1d3557; /* Cor de fundo do menu */
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5)
+  );
 }
 
 nav ul {
@@ -128,18 +140,14 @@ nav ul {
   display: inline-block; /* Define o elemento <ul> como um bloco inline */
 }
 
-nav ul li {
-  display: inline-block; /* Define os itens da lista como inline-block para que fiquem lado a lado */
-  margin-right: 50px;
+nav ul li:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao item do menu ao passar o mouse */
 }
 
-nav ul li:hover {
-  background-color: rgba(
-    51,
-    94,
-    121,
-    0.7
-  ); /* Muda a cor de fundo do item do menu ao passar o mouse */
+nav ul li {
+  display: inline-block;
+  margin-right: 50px;
+  transition: box-shadow 0.3s; /* Adiciona uma transição suave para a sombra */
 }
 
 nav ul li:last-child {
