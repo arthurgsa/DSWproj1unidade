@@ -69,9 +69,10 @@ header {
 }
 
 .logo-topo {
+  margin-left: 25%;
   width: 400px; /* Reduz a largura do logo */
   height: auto;
-  margin-left: 30px; /* Adiciona margem à esquerda da logo */
+  /* Adiciona margem à esquerda da logo */
   margin-top: 20px; /* Adiciona margem ao topo da logo */
   margin-bottom: 20px; /* Adiciona margem ao fundo da logo */
 }
