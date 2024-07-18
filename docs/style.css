@@ -1,3 +1,22 @@
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq-item {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+    background-color: #e1e1e1;
+}
+
+
 form {
     display: flex;
     flex-direction: column;
