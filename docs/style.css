@@ -20,9 +20,7 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: auto;
+    align-items: flex-start; /* Alinha os itens à esquerda */
 }
 
 ul {
