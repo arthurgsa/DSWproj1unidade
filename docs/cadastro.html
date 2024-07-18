@@ -30,21 +30,98 @@
     </nav>
     
 </header>
-    <main>
-        <div class="site">
-        <section id = "sobre">
-            <h2>BEM-VINDO A VOLT VORTEX! </h2>
-            <hr>
-            <img src="" alt="">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nulla eu velit posuere dictum. Duis nec vestibulum leo. Nullam lobortis elit at leo varius, ut suscipit libero malesuada. Vivamus vel ante sit amet leo finibus gravida. Integer consectetur ligula in mi condimentum, id ullamcorper lorem commodo. Nullam sit amet libero nec justo ullamcorper ultrices. Integer in tempor libero. Sed ultricies nisl nec velit vestibulum tempus. Aliquam erat volutpat. Sed lobortis risus sed ante suscipit, non tempor urna facilisis. Integer id felis eget turpis pulvinar blandit.
-            </p>
+   <main>
+    <div class="site">
+        <section id="cadastro">
+            <h2>Cadastro</h2>
+            <form action="submit_form.php" method="POST">
+                <ul>
+                    <li>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </li>
+                    <li>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </li>
+                    <li>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </li>
+                    <li>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" required>
+                    </li>
+                    <li>
+                        <button type="submit">Cadastrar</button>
+                    </li>
+                </ul>
+            </form>
         </section>
-        
+    </div>
+</main>
+
+<footer class="borda">
+    <p>Entre em contato conosco: <a href="mailto:contato@exemplo.com" style="color: white;">contato@exemplo.com</a></p>
+    <p>&copy; 2024 VOLT VORTEX. Desenvolvimento Web I.</p>
+</footer>
+</body>
+</html>
+Explanation
+List Structure: The form fields are organized within an unordered list (<ul>), with each field in a list item (<li>).
+Accessibility: Each input is paired with a corresponding label for better accessibility.
+Optional CSS (for styling)
+Here’s some CSS to style the form using lists:
+
+css
+Copiar código
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+This structure will create a clean and organized registration form using lists.
 
 
-        </div>
-    </main> 
+
+
+
+ChatGPT pode cometer erros. Considere verificar informações 
     </body>
     <footer class="borda">
         <p>Entre em contato conosco: <a href="mailto:contato@exemplo.com" style="color: white;">contato@exemplo.com</a></p>
